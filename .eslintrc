@@ -1,0 +1,12 @@
+{
+  "extends": ["plugin:prettier/recommended"],
+  "rules": {
+    "max-len": [
+      "warn",
+      {
+        "code": 140,
+        "tabWidth": 2
+      }
+    ]
+  }
+}
