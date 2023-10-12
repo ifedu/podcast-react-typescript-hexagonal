@@ -1,11 +1,20 @@
 import { Filter } from '../../components/Filter';
-import { Podcast } from '../../components/Podcast';
+import { Podcast } from './Podcast';
+import { Styles } from './styles';
 
 export const MainPage = () => {
   return (
-    <div>
+    <Styles className="MainPage">
       <Filter></Filter>
-      <Podcast></Podcast>
-    </div>
+
+      <div className="container">
+        <Podcast></Podcast>
+        <Podcast></Podcast>
+        <Podcast></Podcast>
+        <Podcast></Podcast>
+        <Podcast></Podcast>
+        <Podcast></Podcast>
+      </div>
+    </Styles>
   );
 };

@@ -1,3 +1,11 @@
+import { Styles } from './styles';
+
 export const Filter = () => {
-  return <div>Filter</div>;
+  return (
+    <Styles className="Filter">
+      <span>100</span>
+
+      <input type="text" placeholder="Filter podcasts..."></input>
+    </Styles>
+  );
 };

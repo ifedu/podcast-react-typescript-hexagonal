@@ -1,13 +1,17 @@
 import { Detail } from '../../components/Detail';
-import { Episodes } from '../../components/Episodes';
-import { Title } from '../../components/Title';
+import { Episodes } from './Episodes';
+import { Title } from './Title';
+import { Styles } from './styles';
 
 export const PodcastPage = () => {
   return (
-    <div>
+    <Styles className="PodcastPage">
       <Detail></Detail>
-      <Title></Title>
-      <Episodes></Episodes>
-    </div>
+
+      <div className="right">
+        <Title></Title>
+        <Episodes></Episodes>
+      </div>
+    </Styles>
   );
 };

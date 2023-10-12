@@ -1,4 +1,4 @@
-import { Description } from '../../components/Description';
+import { Description } from './Description';
 import { Detail } from '../../components/Detail';
 
 export const EpisodePage = () => {
