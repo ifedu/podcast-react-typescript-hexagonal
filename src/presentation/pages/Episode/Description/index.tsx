@@ -1,14 +1,16 @@
 import { Styles } from './styles';
 
-export const Description = () => {
+export const Description: any = ({ episode }: any) => {
   return (
     <Styles className="Description">
-      <span>Wilco</span>
-      <p>Lorem ipsum...</p>
+      <span>{episode.trackName}</span>
+      <p dangerouslySetInnerHTML={{ __html: episode.description }}></p>
       <hr></hr>
-      <audio controls>
-        <source src="url" />
-      </audio>
+      {episode.episodeUrl && (
+        <audio controls>
+          <source src={episode.episodeUrl} />
+        </audio>
+      )}
     </Styles>
   );
 };

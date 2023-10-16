@@ -1,7 +1,7 @@
 import { Styles } from './styles';
 import { Episode } from '../Episode';
 
-export const Episodes = () => {
+export const Episodes: any = ({ episodes = [], podcastId }: any) => {
   return (
     <Styles className="episodes">
       <div className="table">
@@ -12,10 +12,9 @@ export const Episodes = () => {
         </div>
 
         <div className="body">
-          <Episode index="1"></Episode>
-          <Episode index="2"></Episode>
-          <Episode index="3"></Episode>
-          <Episode index="4"></Episode>
+          {episodes.map((episode: any, i: number) => (
+            <Episode key={episode.trackId} podcastId={podcastId} episode={episode} index={i}></Episode>
+          ))}
         </div>
       </div>
     </Styles>

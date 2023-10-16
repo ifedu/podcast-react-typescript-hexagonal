@@ -29,6 +29,8 @@ export const Styles = styled.aside`
   }
 
   .description {
+    width: 230px;
+
     span {
       font-weight: bold;
     }

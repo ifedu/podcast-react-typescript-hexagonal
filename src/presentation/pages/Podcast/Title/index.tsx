@@ -1,5 +1,5 @@
 import { Styles } from './styles';
 
-export const Title = () => {
-  return <Styles className="Title">Episodes: 66</Styles>;
+export const Title: any = ({ total }: any) => {
+  return <Styles className="Title">Episodes: {total}</Styles>;
 };
