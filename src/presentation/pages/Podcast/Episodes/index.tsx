@@ -13,7 +13,7 @@ export const Episodes: any = ({ episodes = [], podcastId }: any) => {
 
         <div className="body">
           {episodes.map((episode: any, i: number) => (
-            <Episode key={episode.trackId} podcastId={podcastId} episode={episode} index={i}></Episode>
+            <Episode key={episode.id} podcastId={podcastId} episode={episode} index={i}></Episode>
           ))}
         </div>
       </div>

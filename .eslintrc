@@ -1,6 +1,7 @@
 {
   "extends": ["plugin:prettier/recommended"],
   "rules": {
+    "comma-dangle": ["error", "always-multiline"],
     "max-len": [
       "warn",
       {

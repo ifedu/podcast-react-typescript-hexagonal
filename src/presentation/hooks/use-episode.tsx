@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react';
-import { getEpisode } from '../../infrastructure/getEpisode';
+import { Episode } from '../../domain/entities/episode';
 
-export function handleEpisode(podcastId: string, episodeId: string) {
+export function useEpisode(podcastId: string, episodeId: string) {
   const [podcasts, setPodcasts] = useState([]);
 
   useEffect((): any => {
     (async () => {
-      const podcastsData: any = await getEpisode(podcastId, episodeId);
+      const podcastsData: any = await Episode.instance.get(podcastId, episodeId);
       setPodcasts(podcastsData);
     })();
   }, []);

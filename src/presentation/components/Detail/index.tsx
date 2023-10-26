@@ -3,20 +3,20 @@ import { Styles } from './styles';
 export const Detail: any = ({ info }: any) => {
   return (
     <Styles className="Detail">
-      <img src={info?.['im:image'][2].label}></img>
+      <img src={info?.img}></img>
 
       <hr></hr>
 
       <div className="title">
-        <div>{info?.['im:name'].label}</div>
-        <div>by {info?.['im:artist'].label}</div>
+        <div>{info?.name}</div>
+        <div>by {info?.author}</div>
       </div>
 
       <hr></hr>
 
       <div className="description">
         <span>Description:</span>
-        <p>{info?.summary.label}</p>
+        <p>{info?.description}</p>
       </div>
     </Styles>
   );

@@ -37,6 +37,7 @@ export const Styles = styled.aside`
 
     p {
       font-style: italic;
+      word-break: break-word;
     }
   }
 `;
